@@ -126,8 +126,8 @@
   </style>
 
   <!-- Menu -->
-  <div class="menu__Container">
-    <div class="menu" id="Menu">
+  <div class="menu__Container" id="Menu">
+    <div class="menu">
       <div class="Items">
         <h1>Appetizers</h1>
         <ol>
@@ -147,7 +147,7 @@
         </ol>
       </div>
     </div>
-    <div class="menu" id="Menu">
+    <div class="menu">
       <div class="Items">
         <h1>Hand Helds</h1>
         <ol>
@@ -218,6 +218,34 @@
       color: black;
       font-size: 1rem;
       margin-top: 1rem;
+    }
+  </style>
+
+  <!-- Locations -->
+  <div class="locations" id="Locations">
+    <h2>Located All Across The GTA</h2>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369115.0695826519!2d-80.00191697352585!3d43.716544663030746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1738602072359!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Locations Styling -->
+  <style>
+    .locations{
+      width: 100vw;
+      background: grey;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .locations h2{
+      font-size: 3rem;
+      color: red;
+      text-transform: uppercase;
+      margin-bottom: 1rem; 
+    }
+    .map{
+      width="600" height="450"
     }
   </style>
 </body>
