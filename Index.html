@@ -126,58 +126,69 @@
   </style>
 
   <!-- Menu -->
-  <div class="menu" id="Menu">
-    <div class="Items">
-      <h1>Appetizers</h1>
-      <ol>
-        <li>The Best Spinach Dip - $12.99</li>
-        <li>The Best Calamari - $8.99</li>
-        <li>The Best Chicken Soup - $13.99</li>
-        <li>The Best Cesar Salad - $12.99</li>
-      </ol>
+  <div class="menu__Container">
+    <div class="menu" id="Menu">
+      <div class="Items">
+        <h1>Appetizers</h1>
+        <ol>
+          <li>The Best Spinach Dip - $12.99</li>
+          <li>The Best Calamari - $8.99</li>
+          <li>The Best Chicken Soup - $13.99</li>
+          <li>The Best Cesar Salad - $12.99</li>
+        </ol>
+      </div>
+      <div class="Items">
+       <h1>Deserts</h1>
+        <ol>
+          <li>The Best Chocolate Cake - $12.99</li>
+          <li>The Best Ice Cream - $8.99</li>
+          <li>The Best Cookie - $5.99</li>
+          <li>The Best Lava Cake - $13.99</li>
+        </ol>
+      </div>
     </div>
-    <div class="Items">
-      <h1>Deserts</h1>
-      <ol>
-        <li>The Best Chocolate Cake - $12.99</li>
-        <li>The Best Ice Cream - $8.99</li>
-        <li>The Best Cookie - $5.99</li>
-        <li>The Best Lava Cake - $13.99</li>
-      </ol>
-    </div>
-  </div>
-  <div class="menu" id="Menu">
-    <div class="Items">
-      <h1>Hand Helds</h1>
-      <ol>
-        <li>The Best Burger - $19.99</li>
-        <li>The Best Double Stacked Burger - $22.99</li>
-        <li>The Best Chicken Wrap - $18.99</li>
-        <li>The Best Grilled Cheese - $14.99</li>
-      </ol>
-    </div>
-    <div class="Items">
-      <h1>Sides</h1>
-      <ol>
-        <li>The Best Fies - $4.99</li>
-        <li>The Best Poutine - $8.99</li>
-        <li>The Best Mashed Potatoes - $5.99</li>
-      </ol>
-    </div>
-    <div class="Items">
-      <h1>Drinks</h1>
-      <ol>
-        <li>The Best Water - $2.99</li>
-        <li>The Best Iced Tea - $3.99</li>
-        <li>The Best Cocacola - $3.99</li>
-        <li>The Best Coffee - $2.99</li>
-        <li>The Best Hot Coco - $2.99</li>
-      </ol>
+    <div class="menu" id="Menu">
+      <div class="Items">
+        <h1>Hand Helds</h1>
+        <ol>
+          <li>The Best Burger - $19.99</li>
+          <li>The Best Double Stacked Burger - $22.99</li>
+          <li>The Best Chicken Wrap - $18.99</li>
+          <li>The Best Grilled Cheese - $14.99</li>
+        </ol>
+      </div>
+      <div class="Items">
+        <h1>Sides</h1>
+        <ol>
+          <li>The Best Fies - $4.99</li>
+          <li>The Best Poutine - $8.99</li>
+          <li>The Best Mashed Potatoes - $5.99</li>
+        </ol>
+      </div>
+      <div class="Items">
+        <h1>Drinks</h1>
+        <ol>
+          <li>The Best Water - $2.99</li>
+          <li>The Best Iced Tea - $3.99</li>
+          <li>The Best Cocacola - $3.99</li>
+          <li>The Best Coffee - $2.99</li>
+          <li>The Best Hot Coco - $2.99</li>
+        </ol>
+      </div>
     </div>
   </div>
 
   <!-- Menu Styling -->
   <style>
+    .menu__Container{
+      background:grey;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      margin-bottom: 1rem;
+    }  
     .menu{
       background:grey;
       width: 100vw;
