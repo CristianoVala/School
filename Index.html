@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Name: Cristiano Vala
+    Student Id:
+    Topic: Restaurant
+  -->
+<head>
+ <title>The Best Restaurant</title>
+</head>
+<body>
+  <style>
+    ::html,body
+      {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: clip;
+      }
+  </style>
+  <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">The Best</a>
+        <input type="checkbox" id="check">
+        <div class="navbar__menu">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="#Menu class="navbar__link">Menu</a>
+            <a href="#Locations class="navbar__link">Locations</a>
+            <a href="#Hours class="navbar__link">Hours</a>
+           <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </nav>
+  <style>
+    ::navbar{
+      background: var(--black);
+      height: 60px;
+      padding: 0.5rem calc((50vw - 1600px) / 2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top:0px;
+      z-index:3;
+      width: 100%;
+    }
+    ::navbar__logo{
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    ::navbar__link{
+      color: var(--blue);
+      text-decoration: none;
+      padding: 1rem 0.5rem;
+      cursor: none;
+      margin: 2rem 0rem;
+    }
+    ::navbar__link:hover{
+      color: var(--white);
+    }
+    ::open-menu, .close-menu{
+      position: absolute;
+      color: var(--blue);
+      font-size: 1.5rem;
+      display: none;
+    }
+    ::open-menu{
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    ::close-menu{
+      top: 20px;
+      right: 20px;
+    }
+    #check{display: none;}
+    @media screen and (max-width: 768px){
+      ::navbar__menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height:100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index:100;
+        background-color: var(--black);
+        transition: all 0.2s ease-in-out;
+        text-align:center;
+      }
+      ::navbar__link{
+        padding:10px;
+        margin:40px;
+        display: flex;
+        felx-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+      }
+    ::open-menu, ::close-menu{display:block;}
+    #check:checked ~ .navbar__menu {right: 0;}
+  </style>
+</body>
